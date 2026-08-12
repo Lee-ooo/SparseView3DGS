@@ -10,6 +10,8 @@
 
 > 完整的程序流程、统一入口、断点续训、指定视角渲染和当前实验结果请参阅 [`PIPELINE_ZH.md`](PIPELINE_ZH.md)。
 
+> 新电脑从零配置环境请参阅 [`SETUP_ZH.md`](SETUP_ZH.md)。
+
 ## 目录
 
 ```text
