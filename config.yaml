@@ -1,0 +1,18 @@
+# SparseView3DGS 统一配置。数值可按图片数量与显存调整。
+project_name: personal_scene
+colmap_executable: colmap
+camera_model: OPENCV
+single_camera: true
+matching_method: exhaustive
+
+# 三类方法的统一思路开关；prepare 阶段会写入 manifest，后端按需读取。
+view_consistency: true
+epipolar_depth_prior: false
+depth_model: none
+few_shot_regularization: true
+
+# 少视图质量门槛
+min_image_width: 640
+min_image_height: 480
+blur_threshold: 60.0
+min_registered_images: 4

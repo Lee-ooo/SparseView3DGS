@@ -1,0 +1,13 @@
+project_name: personal_scene_latest_35_single_camera
+colmap_executable: colmap
+camera_model: OPENCV
+single_camera: true
+matching_method: exhaustive
+view_consistency: true
+epipolar_depth_prior: false
+depth_model: none
+few_shot_regularization: true
+min_image_width: 640
+min_image_height: 480
+blur_threshold: 55.0
+min_registered_images: 4

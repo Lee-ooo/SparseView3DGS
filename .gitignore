@@ -1,0 +1,36 @@
+__pycache__/
+*.pyc
+
+# Local environments and IDE metadata
+.venv/
+.idea/
+
+# Local datasets and reconstruction/training artifacts
+data/
+output/
+model/
+
+# Downloaded packages, model weights, and compiled dependencies
+program/torch-cu130-cache/
+program/weights/
+program/**/build/
+program/**/dist/
+program/colmap-x64-windows-cuda/
+**/.git/
+
+# Common large binary artifacts
+*.whl
+*.pth
+*.pt
+*.ckpt
+*.onnx
+*.dll
+*.lib
+*.pyd
+
+output/reconstruction/*/database.db
+output/reconstruction/*/dense/
+output/reconstruction/*/sparse/
+output/reconstruction/*/reports/
+input/images/*
+!input/images/README.md
