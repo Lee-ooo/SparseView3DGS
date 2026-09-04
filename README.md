@@ -106,13 +106,9 @@ output/reconstruction/<name>/
 
 ### 自由视角
 
-直接运行以下命令即可启动自由视角交互界面：
-
 ```powershell
 python .\render\render_views.py
 ```
-
-如需覆盖默认数据集、模型或迭代次数，可继续追加 `--dataset`、`--model-path` 和 `--iteration`。
 
 鼠标左键旋转，右键平移，滚轮缩放；`R` 重置，`S` 保存 RGB 和位姿 JSON，`Q` 或 `Esc` 退出。结果保存到模型目录下的 `interactive/`。
 
@@ -127,4 +123,6 @@ python .\render\render_views.py `
   --render-depth
 ```
 
-训练前请确认数据集中的 `sparse/0/points3D.ply` 是 PDCNet+ 生成的稠密初始化点云。
+### 成果展示
+
+![结果](C:\mine\git\SparseView3DGS\结果.png)
