@@ -1,7 +1,7 @@
-# 在这里放自己的图片
-
-把同一场景或物体的 JPG/PNG 图片放进本目录后，再从项目根目录运行：
+输入照片请放在 data/，然后从项目根目录执行：
 
 ```powershell
-python .\program\scripts\run_pipeline.py --stage prepare --images .\data --workspace .\output\reconstruction\recon_latest
+python .\train\run_pipeline.py --stage sfm --images .\data --workspace .\output\reconstruction\new_reconstruction
 ```
+
+SfM 阶段保留 COLMAP 相机位姿，并用 PDCNet+ 生成稠密 `points3D.ply` 作为 CoR-GS + Binocular 的初始化点云。

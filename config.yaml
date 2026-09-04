@@ -1,11 +1,18 @@
-# SparseView3DGS 统一配置。数值可按图片数量与显存调整。
+# SparseView3DGS 统一配置
 project_name: personal_scene
 colmap_executable: colmap
 camera_model: OPENCV
 single_camera: true
 matching_method: exhaustive
 
-# 三类方法的统一思路开关；prepare 阶段会写入 manifest，后端按需读取。
+# SfM 只提供相机位姿/内参；PDCNet+ 负责替换 3DGS 的点云初始化
+pdcnet_enabled: true
+pdcnet_root: train/sfm/dense_matcher
+pdcnet_pretrained_model: megadepth
+pdcnet_views: 3
+pdcnet_multi_stage_type: h
+
+# 训练阶段
 view_consistency: true
 epipolar_depth_prior: false
 depth_model: none

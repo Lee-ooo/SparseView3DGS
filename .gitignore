@@ -11,11 +11,11 @@ output/
 model/
 
 # Downloaded packages, model weights, and compiled dependencies
-program/torch-cu130-cache/
-program/weights/
-program/**/build/
-program/**/dist/
-program/colmap-x64-windows-cuda/
+train/weights/
+train/**/build/
+train/**/dist/
+train/sfm/colmap-x64-windows-cuda/
+train/sfm/dense_matcher/pre_trained_models/
 **/.git/
 
 # Common large binary artifacts

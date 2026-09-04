@@ -2,3 +2,5 @@ numpy>=1.26,<3
 Pillow>=10,<12
 PyYAML>=6,<7
 opencv-python>=4.8,<5
+trimesh>=4,<5
+cupy-cuda12x>=13,<14
